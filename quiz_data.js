@@ -7,7 +7,7 @@ const quizData = [
             "C. Mengubah data menjadi format berbeda",
             "D. Menghapus data yang tidak diperlukan"
         ],
-        "answer": "B"
+        "answer": "B. Menganalisis dan mengekstrak informasi yang berguna dari data"
     },
     {
         "question": "Teknik data mining yang digunakan untuk mengelompokkan data yang memiliki karakteristik serupa disebut?",
@@ -17,7 +17,7 @@ const quizData = [
             "C. Prediksi",
             "D. Regresi"
         ],
-        "answer": "B"
+        "answer": "B. Clustering"
     },
     {
         "question": "Metode data mining mana yang cocok untuk memprediksi nilai di masa depan berdasarkan pola historis?",
@@ -27,7 +27,7 @@ const quizData = [
             "C. Regresi",
             "D. Asosiasi"
         ],
-        "answer": "C"
+        "answer": "C. Regresi"
     },
     {
         "question": "Algoritma berikut adalah algoritma yang sering digunakan dalam proses klasifikasi, kecuali:",
@@ -37,7 +37,7 @@ const quizData = [
             "C. Support Vector Machine",
             "D. Apriori"
         ],
-        "answer": "D"
+        "answer": "D. Apriori"
     },
     {
         "question": "Apa tujuan dari analisis asosiasi dalam data mining?",
@@ -47,7 +47,7 @@ const quizData = [
             "C. Mengklasifikasikan data dalam kategori tertentu",
             "D. Memeriksa data untuk outlier"
         ],
-        "answer": "A"
+        "answer": "A. Mengidentifikasi pola hubungan antar item dalam dataset"
     },
     {
         "question": "Proses evaluasi model dalam data mining dilakukan untuk?",
@@ -57,7 +57,7 @@ const quizData = [
             "C. Mengurangi waktu pemrosesan",
             "D. Mengubah data menjadi informasi"
         ],
-        "answer": "B"
+        "answer": "B. Memastikan model bekerja dengan akurasi yang tinggi"
     },
     {
         "question": "Berikut ini adalah tahapan utama dalam proses data mining, kecuali:",
@@ -67,7 +67,7 @@ const quizData = [
             "C. Visualisasi data",
             "D. Penciptaan database"
         ],
-        "answer": "D"
+        "answer": "D. Penciptaan database"
     },
     {
         "question": "Algoritma Apriori digunakan dalam data mining untuk:",
@@ -77,7 +77,7 @@ const quizData = [
             "C. Regresi",
             "D. Asosiasi"
         ],
-        "answer": "D"
+        "answer": "D. Asosiasi"
     },
     {
         "question": "Metode clustering yang mengelompokkan data berdasarkan jarak antar titik disebut:",
@@ -87,7 +87,7 @@ const quizData = [
             "C. K-Means",
             "D. Regresi Linear"
         ],
-        "answer": "C"
+        "answer": "C. K-Means"
     },
     {
         "question": "Kelemahan utama dari metode K-Means adalah:",
@@ -97,7 +97,7 @@ const quizData = [
             "C. Sangat dipengaruhi oleh outlier",
             "D. Tidak dapat digunakan untuk data kontinu"
         ],
-        "answer": "C"
+        "answer": "C. Sangat dipengaruhi oleh outlier"
     },
     {
         "question": "Pada metode Decision Tree, setiap percabangan pada pohon mewakili:",
@@ -107,7 +107,7 @@ const quizData = [
             "C. Kesalahan prediksi",
             "D. Proses normalisasi"
         ],
-        "answer": "A"
+        "answer": "A. Keputusan atau aturan"
     },
     {
         "question": "Algoritma Naive Bayes dalam data mining biasanya digunakan untuk:",
@@ -117,7 +117,7 @@ const quizData = [
             "C. Clustering data besar",
             "D. Asosiasi antar item"
         ],
-        "answer": "B"
+        "answer": "B. Klasifikasi berbasis probabilitas"
     },
     {
         "question": "Metode evaluasi model yang menggunakan data latih dan data uji untuk menilai performa model disebut:",
@@ -127,7 +127,7 @@ const quizData = [
             "C. Asosiasi",
             "D. Praproses data"
         ],
-        "answer": "B"
+        "answer": "B. Validasi silang (Cross-validation)"
     },
     {
         "question": "Teknik reduksi dimensi yang populer dalam data mining adalah:",
@@ -137,7 +137,7 @@ const quizData = [
             "C. K-Means",
             "D. Decision Tree"
         ],
-        "answer": "B"
+        "answer": "B. Analisis Komponen Utama (Principal Component Analysis – PCA)"
     },
     {
         "question": "Dalam analisis asosiasi, istilah support merujuk pada:",
@@ -147,7 +147,7 @@ const quizData = [
             "C. Tingkat kepastian dalam aturan",
             "D. Jumlah data yang hilang"
         ],
-        "answer": "A"
+        "answer": "A. Tingkat kemunculan item dalam dataset"
     },
     {
         "question": "Proses menghilangkan data yang tidak relevan atau duplikat pada data mining dikenal sebagai:",
@@ -157,7 +157,7 @@ const quizData = [
             "C. Praproses data",
             "D. Penambangan data"
         ],
-        "answer": "C"
+        "answer": "C. Praproses data"
     },
     {
         "question": "Teknik data mining yang menggunakan model atau pola untuk memprediksi nilai atau kelas di masa mendatang disebut:",
@@ -167,7 +167,7 @@ const quizData = [
             "C. Asosiasi",
             "D. Pra-pemrosesan"
         ],
-        "answer": "A"
+        "answer": "A. Regresi"
     },
     {
         "question": "Kelebihan utama dari algoritma Random Forest dibandingkan dengan Decision Tree tunggal adalah:",
@@ -177,7 +177,7 @@ const quizData = [
             "C. Random Forest lebih stabil dan akurat karena menggabungkan beberapa pohon",
             "D. Random Forest hanya bekerja pada data numerik"
         ],
-        "answer": "C"
+        "answer": "C. Random Forest lebih stabil dan akurat karena menggabungkan beberapa pohon"
     },
     {
         "question": "Algoritma K-Nearest Neighbors (KNN) mengklasifikasikan data baru berdasarkan:",
@@ -187,7 +187,7 @@ const quizData = [
             "C. Model yang dibentuk oleh data lama",
             "D. Pola klasifikasi yang dibuat sebelumnya"
         ],
-        "answer": "B"
+        "answer": "B. Jarak dari titik data baru ke data yang sudah ada"
     },
     {
         "question": "Pada metode clustering, istilah centroid merujuk pada:",
@@ -197,7 +197,7 @@ const quizData = [
             "C. Jumlah data dalam kelompok",
             "D. Tingkat korelasi dalam kelompok"
         ],
-        "answer": "A"
+        "answer": "A. Titik rata-rata dari sebuah kelompok (cluster)"
     },
     {
         "question": "Apa fungsi utama dari metode klasifikasi dalam data mining?",
@@ -207,7 +207,7 @@ const quizData = [
             "C. Memisahkan data ke dalam kategori berdasarkan pola tertentu",
             "D. Mereduksi jumlah data"
         ],
-        "answer": "C"
+        "answer": "C. Memisahkan data ke dalam kategori berdasarkan pola tertentu"
     },
     {
         "question": "Algoritma yang memanfaatkan pohon keputusan untuk klasifikasi dan prediksi dikenal dengan:",
@@ -217,7 +217,7 @@ const quizData = [
             "C. Decision Tree",
             "D. Naive Bayes"
         ],
-        "answer": "C"
+        "answer": "C. Decision Tree"
     },
     {
         "question": "Dalam analisis asosiasi, istilah confidence merujuk pada:",
@@ -227,7 +227,7 @@ const quizData = [
             "C. Jumlah data yang hilang dalam dataset",
             "D. Nilai tengah dalam analisis"
         ],
-        "answer": "B"
+        "answer": "B. Probabilitas bahwa item lain akan muncul ketika item tertentu muncul"
     },
     {
         "question": "Algoritma clustering mana yang membagi data menjadi kelompok berdasarkan jarak terpendek dari titik ke pusat cluster?",
@@ -237,7 +237,7 @@ const quizData = [
             "C. K-Means",
             "D. Random Forest"
         ],
-        "answer": "C"
+        "answer": "C. K-Means"
     },
     {
         "question": "Jika kita memiliki data yang memiliki hubungan non-linear, metode yang paling cocok untuk digunakan adalah:",
@@ -247,7 +247,7 @@ const quizData = [
             "C. K-Nearest Neighbors",
             "D. Analisis Asosiasi"
         ],
-        "answer": "B"
+        "answer": "B. Support Vector Machine dengan kernel non-linear"
     },
     {
         "question": "Manakah dari berikut ini yang BUKAN merupakan tujuan dari data mining?",
@@ -257,7 +257,7 @@ const quizData = [
             "C. Menjaga kerahasiaan data",
             "D. Menghasilkan informasi berguna dari data besar"
         ],
-        "answer": "C"
+        "answer": "C. Menjaga kerahasiaan data"
     },
     {
         "question": "Apa kelemahan utama dari algoritma K-Nearest Neighbors (KNN)?",
@@ -267,7 +267,7 @@ const quizData = [
             "C. Tidak memiliki parameter untuk pengaturan jumlah neighbor",
             "D. Menghasilkan banyak error"
         ],
-        "answer": "B"
+        "answer": "B. Sensitif terhadap outlier dan ukuran data"
     },
         {
             "question": "Tahap pertama dalam proses data mining biasanya adalah:",
@@ -277,7 +277,7 @@ const quizData = [
                 "C. Praproses data",
                 "D. Evaluasi model"
             ],
-            "answer": "C"
+            "answer": "C. Praproses data"
         },
         {
             "question": "Dalam data mining, sebuah pohon keputusan memiliki fitur pruning untuk:",
@@ -287,7 +287,7 @@ const quizData = [
                 "C. Memastikan semua cabang memiliki kedalaman yang sama",
                 "D. Menggabungkan semua keputusan menjadi satu hasil"
             ],
-            "answer": "B"
+            "answer": "B. Mengurangi kompleksitas dan menghindari overfitting"
         },
         {
             "question": "Algoritma Support Vector Machine (SVM) bekerja dengan membangun:",
@@ -297,7 +297,7 @@ const quizData = [
                 "C. Model clustering berdasarkan centroid",
                 "D. Himpunan aturan untuk mengelompokkan data"
             ],
-            "answer": "A"
+            "answer": "A. Sebuah garis atau hyperplane yang memisahkan data"
         },
         {
             "question": "Teknik data mining yang bertujuan mengelompokkan data tanpa label atau kategori tertentu disebut:",
@@ -307,7 +307,7 @@ const quizData = [
                 "C. Regresi",
                 "D. Asosiasi"
             ],
-            "answer": "B"
+            "answer": "B. Clustering"
         },
         {
             "question": "Dalam analisis asosiasi, aturan yang memiliki nilai support tinggi menunjukkan:",
@@ -317,7 +317,7 @@ const quizData = [
                 "C. Aturan tersebut memiliki korelasi negatif",
                 "D. Aturan tersebut hanya relevan untuk sebagian data"
             ],
-            "answer": "B"
+            "answer": "B. Aturan tersebut sering muncul di dataset"
         },
         {
             "question": "Proses normalisasi data pada data mining bertujuan untuk:",
@@ -327,7 +327,7 @@ const quizData = [
                 "C. Meningkatkan nilai variabel data",
                 "D. Menggabungkan semua data menjadi satu kategori"
             ],
-            "answer": "A"
+            "answer": "A. Mengubah data menjadi standar yang sama"
         },
         {
             "question": "Apa fungsi utama dari algoritma regresi dalam data mining?",
@@ -337,7 +337,7 @@ const quizData = [
                 "C. Mengelompokkan data ke dalam cluster",
                 "D. Menganalisis kategori data"
             ],
-            "answer": "B"
+            "answer": "B. Memprediksi nilai numerik di masa depan"
         },
         {
             "question": "Metode evaluasi yang memisahkan data menjadi beberapa subset untuk menilai performa model disebut:",
@@ -347,7 +347,7 @@ const quizData = [
                 "C. Clustering",
                 "D. Normalisasi"
             ],
-            "answer": "B"
+            "answer": "B. Cross-validation"
         },
         {
             "question": "Jika ingin melakukan prediksi kategori pada data yang baru, teknik data mining yang paling cocok digunakan adalah:",
@@ -357,7 +357,7 @@ const quizData = [
                 "C. Asosiasi",
                 "D. Reduksi Dimensi"
             ],
-            "answer": "B"
+            "answer": "B. Klasifikasi"
         },
         {
             "question": "Dalam clustering, sebuah cluster dapat didefinisikan sebagai:",
@@ -367,7 +367,7 @@ const quizData = [
                 "C. Titik data yang berada pada nilai maksimum",
                 "D. Semua data dalam satu kategori"
             ],
-            "answer": "B"
+            "answer": "B. Kelompok data yang memiliki kesamaan karakteristik"
         },
         {
             "question": "Apa perbedaan utama antara klasifikasi dan clustering?",
@@ -377,7 +377,7 @@ const quizData = [
                 "C. Clustering mengharuskan data memiliki label, sementara klasifikasi tidak",
                 "D. Tidak ada perbedaan antara keduanya"
             ],
-            "answer": "B"
+            "answer": "B. Klasifikasi menggunakan label untuk mengelompokkan data, sementara clustering tidak"
         },
         {
             "question": "Pada algoritma K-Means, nilai ‘K’ merujuk pada:",
@@ -387,7 +387,7 @@ const quizData = [
                 "C. Jarak rata-rata antar titik",
                 "D. Jumlah variabel dalam data"
             ],
-            "answer": "B"
+            "answer": "B. Jumlah cluster yang diinginkan"
         },
         {
             "question": "Teknik yang digunakan untuk mengurangi jumlah variabel dalam dataset tanpa kehilangan informasi penting disebut:",
@@ -397,7 +397,7 @@ const quizData = [
                 "C. Reduksi Dimensi",
                 "D. Normalisasi"
             ],
-            "answer": "C"
+            "answer": "C. Reduksi Dimensi"
         },
         {
             "question": "Dalam data mining, istilah overfitting merujuk pada:",
@@ -407,7 +407,7 @@ const quizData = [
                 "C. Model yang menggunakan terlalu sedikit fitur",
                 "D. Model yang membutuhkan waktu pemrosesan lama"
             ],
-            "answer": "B"
+            "answer": "B. Model yang bekerja sangat baik pada data latih tetapi buruk pada data baru"
         },
         {
             "question": "Algoritma berikut yang digunakan untuk clustering berbasis hirarki adalah:",
@@ -417,7 +417,7 @@ const quizData = [
                 "C. Naive Bayes",
                 "D. Random Forest"
             ],
-            "answer": "B"
+            "answer": "B. Agglomerative Clustering"
         },
         {
             "question": "Apa yang dimaksud dengan Euclidean distance dalam algoritma K-Nearest Neighbors?",
@@ -427,7 +427,7 @@ const quizData = [
                 "C. Jarak rata-rata dari seluruh data",
                 "D. Jarak terjauh antara dua titik di cluster"
             ],
-            "answer": "B"
+            "answer": "B. Jarak terpendek antara dua titik dalam ruang dimensi"
         },
         {
             "question": "Metode data mining yang cocok untuk memprediksi hasil berdasarkan variabel kontinu adalah:",
@@ -437,7 +437,7 @@ const quizData = [
                 "C. Regresi",
                 "D. Asosiasi"
             ],
-            "answer": "C"
+            "answer": "C. Regresi"
         },
         {
             "question": "Dalam teknik evaluasi model, confusion matrix berguna untuk:",
@@ -447,7 +447,7 @@ const quizData = [
                 "C. Mengelompokkan data berdasarkan fitur",
                 "D. Memprediksi nilai variabel kontinu"
             ],
-            "answer": "B"
+            "answer": "B. Menilai kinerja klasifikasi model"
         },
         {
             "question": "Istilah lift ratio dalam analisis asosiasi digunakan untuk:",
@@ -457,7 +457,7 @@ const quizData = [
                 "C. Mengukur kekuatan aturan asosiasi dibandingkan ekspektasi acak",
                 "D. Menghitung jarak antara item dalam aturan"
             ],
-            "answer": "C"
+            "answer": "C. Mengukur kekuatan aturan asosiasi dibandingkan ekspektasi acak"
         },
         {
             "question": "Salah satu metode yang umum digunakan untuk menangani missing values pada dataset adalah:",
@@ -467,7 +467,7 @@ const quizData = [
                 "C. Menduplikasi data yang hilang",
                 "D. Mengabaikan data hilang pada saat analisis"
             ],
-            "answer": "B"
+            "answer": "B. Menggunakan mode atau mean untuk mengisi nilai kosong"
         },
         {
             "question": "Apa peran utama dari feature selection dalam proses data mining?",
@@ -477,7 +477,7 @@ const quizData = [
                 "C. Menghapus data yang redundan dari database",
                 "D. Meningkatkan jumlah data latih"
             ],
-            "answer": "B"
+            "answer": "B. Memilih fitur yang paling relevan untuk meningkatkan kinerja model"
         },
         {
             "question": "Algoritma Support Vector Machine (SVM) berusaha memaksimalkan:",
@@ -487,7 +487,7 @@ const quizData = [
                 "C. Ukuran dataset",
                 "D. Nilai variabel independen"
             ],
-            "answer": "A"
+            "answer": "A. Jarak antara kelas positif dan negatif"
         },
         {
             "question": "Dalam model Random Forest, jumlah pohon yang terlalu banyak dapat menyebabkan:",
@@ -497,6 +497,6 @@ const quizData = [
                 "C. Reduksi dalam waktu komputasi",
                 "D. Menghasilkan data yang tidak akurat"
             ],
-            "answer": "B"
+            "answer": "B. Overfitting pada data latih"
         }
 ];
