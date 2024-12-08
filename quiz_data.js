@@ -208,7 +208,7 @@ const quizData = [
             "D. Mereduksi jumlah data"
         ],
         "answer": "C"
-    }
+    },
     {
         "question": "Algoritma yang memanfaatkan pohon keputusan untuk klasifikasi dan prediksi dikenal dengan:",
         "options": [
