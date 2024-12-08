@@ -1,36 +1,3 @@
-<?php
-// Membaca data soal dari file JSON
-$quiz_data = [];
-$json_file = 'quiz_data.json';  // Path ke file JSON yang baru dibuat
-
-// Cek apakah file JSON ada
-if (file_exists($json_file)) {
-    // Membaca dan mengonversi data JSON menjadi array
-    $json_data = file_get_contents($json_file);
-    $quiz_data = json_decode($json_data, true); // decode JSON ke array asosiatif
-} else {
-    echo "File JSON tidak ditemukan!";
-    exit;
-}
-
-// Inisialisasi nilai skor
-$score = 0;
-
-// Proses jawaban pengguna jika form disubmit
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    foreach ($quiz_data as $index => $question) {
-        // Ambil jawaban pengguna
-        $user_answer = $_POST['answer_' . $index] ?? null;
-
-        // Cek jika jawaban pengguna sama dengan jawaban yang benar
-        if ($user_answer && $user_answer === $question['answer']) {
-            $score++;
-        }
-    }
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,35 +8,81 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
     <div class="container my-5">
-        <h1 align="center">Kuis Data Mining</h1>
+        <h1 class="text-center">Kuis Data Mining</h1>
 
-        <?php if ($_SERVER['REQUEST_METHOD'] === 'POST'): ?>
-            <p><strong>Skor Anda: <?php echo $score; ?> / <?php echo count($quiz_data); ?></strong></p>
-        <?php endif; ?>
+        <div id="quiz-container">
+            <!-- Soal kuis akan dimuat di sini -->
+        </div>
 
-        <form method="post">
-            <?php foreach ($quiz_data as $index => $question): ?>
-                <div class="mb-3">
-                    <label for="question_<?php echo $index; ?>" class="form-label">
-                        <strong> <?php echo $index + 1; ?>.</strong> <?php echo $question['question']; ?>
-                    </label>
-                    <?php foreach ($question['options'] as $option): ?>
-                        <div class="form-check">
-                            <input 
-                                class="form-check-input" 
-                                type="radio" 
-                                name="answer_<?php echo $index; ?>" 
-                                id="question_<?php echo $index; ?>_<?php echo substr($option, 0, 1); ?>" 
-                                value="<?php echo substr($option, 0, 1); ?>">
-                            <label class="form-check-label" for="question_<?php echo $index; ?>_<?php echo substr($option, 0, 1); ?>">
-                                <?php echo $option; ?>
-                            </label>
-                        </div>
-                    <?php endforeach; ?>
-                </div>
-            <?php endforeach; ?>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" id="submit-btn">Submit</button>
+        </div>
+
+        <div id="result" class="text-center mt-4" style="display:none;">
+            <p><strong>Skor Anda: <span id="score"></span> / <span id="total-questions"></span></strong></p>
+        </div>
     </div>
+
+    <script src="quiz_data.js"></script>
+    <script>
+        // Menampilkan soal kuis
+        const quizContainer = document.getElementById("quiz-container");
+        const submitButton = document.getElementById("submit-btn");
+
+        // Menampilkan soal dan pilihan jawaban
+        quizData.forEach((question, index) => {
+            // Membuat container untuk soal dan pilihan jawaban
+            const questionContainer = document.createElement("div");
+            questionContainer.classList.add("mb-3");
+
+            // Menambahkan teks soal
+            const questionLabel = document.createElement("label");
+            questionLabel.classList.add("form-label");
+            questionLabel.innerHTML = `<strong>${index + 1}.</strong> ${question.question}`;
+            questionContainer.appendChild(questionLabel);
+
+            // Menambahkan pilihan jawaban
+            question.options.forEach((option, i) => {
+                const optionContainer = document.createElement("div");
+                optionContainer.classList.add("form-check");
+
+                const input = document.createElement("input");
+                input.classList.add("form-check-input");
+                input.type = "radio";
+                input.name = `answer_${index}`;
+                input.id = `question_${index}_option_${i}`;
+                input.value = option;
+
+                const label = document.createElement("label");
+                label.classList.add("form-check-label");
+                label.setAttribute("for", `question_${index}_option_${i}`);
+                label.innerHTML = option;
+
+                optionContainer.appendChild(input);
+                optionContainer.appendChild(label);
+                questionContainer.appendChild(optionContainer);
+            });
+
+            quizContainer.appendChild(questionContainer);
+        });
+
+        // Proses ketika tombol submit ditekan
+        submitButton.addEventListener("click", () => {
+            let score = 0;
+
+            // Menghitung skor berdasarkan jawaban yang dipilih
+            quizData.forEach((question, index) => {
+                const selectedAnswer = document.querySelector(`input[name="answer_${index}"]:checked`);
+                if (selectedAnswer && selectedAnswer.value === question.answer) {
+                    score++;
+                }
+            });
+
+            // Menampilkan hasil
+            document.getElementById("result").style.display = "block";
+            document.getElementById("score").innerText = score;
+            document.getElementById("total-questions").innerText = quizData.length;
+        });
+    </script>
 </body>
 </html>
