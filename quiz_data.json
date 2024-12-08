@@ -1,4 +1,4 @@
-[
+const quizData = [
     {
         "question": "Apa tujuan utama dari data mining?",
         "options": [
@@ -208,7 +208,7 @@
             "D. Mereduksi jumlah data"
         ],
         "answer": "C"
-    },
+    }
     {
         "question": "Algoritma yang memanfaatkan pohon keputusan untuk klasifikasi dan prediksi dikenal dengan:",
         "options": [
@@ -499,5 +499,4 @@
             ],
             "answer": "B"
         }
-    
-]
+];
